@@ -2,14 +2,25 @@
   font-family: monospace;
 }
 body{
-  background: aqua;
+  background: aliceblue;
   height: 100vh;
   width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: auto;
 }
 h1{
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
+.form{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
 ::placeholder{
   color: blue;
   opacity: .5;
@@ -21,9 +32,14 @@ h1{
   border-radius: 5px;
   padding: .5em;
 }
-textarea{
-  width: 100%;
+.form-control{
+  width: 90vw;
   resize: none;
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
+}
+.btnArea{
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
 }

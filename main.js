@@ -10,13 +10,35 @@ const wordCounter = (value) => {
     wordCount.innerHTML = `Word Count: ${value.split(" ").length}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+    error.innerHTML = "Please start typing so I can start counting...Please"; // UPDATE THIS
   }
 }
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
   // complete the function
+  const header = document.querySelector('h1')
+  const body = document.body
+  const dBtn = document.querySelector('button')
+  const rBtn = document.querySelector('button[type="reset"]')
+  const sBtn = document.querySelector('button[type="submit"]')
+
+  if (dBtn.innerHTML === 'Dark Mode') {
+    dBtn.innerHTML = 'Light Mode'
+    body.style.background = 'black'
+    textarea.style.background = 'transparent'
+    textarea.style.border = 'none'
+    dBtn.style.color = 'white'
+  } else {
+    dBtn.innerHTML = 'Dark Mode'
+    body.style.background = ''
+    textarea.style.background = ''
+    textarea.style.border = ''
+    dBtn.style.color = ''
+
+  }
+  
+  
 }
 
 
@@ -41,8 +63,8 @@ form.addEventListener("submit", (event) => {
 });
 
 form.addEventListener("reset", () => {
-  error.innerHTML = ""; // on reset, clear the innderHTML
-  wordCount.innerHTML = ""; // on reset, clear the innderHTML
+  error.innerHTML = ""; // on reset, clear the innerHTML
+  wordCount.innerHTML = ""; // on reset, clear the innerHTML
 });
 
 toggleButton.addEventListener("click", (event) => {

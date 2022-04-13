@@ -29,13 +29,18 @@ const toggleMode = (btnText) => {
     textarea.style.background = 'transparent'
     textarea.style.border = 'none'
     dBtn.style.color = 'white'
+    dBtn.style.background = 'transparent'
+    rBtn.style.background = 'transparent'
+    sBtn.style.background = 'transparent'
+  
   } else {
     dBtn.innerHTML = 'Dark Mode'
     body.style.background = ''
     textarea.style.background = ''
     textarea.style.border = ''
-    dBtn.style.color = ''
-
+    dBtn.style.background = ''
+    rBtn.style.background = ''
+    sBtn.style.background = ''
   }
   
   

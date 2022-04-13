@@ -114,8 +114,8 @@ form.addEventListener("submit", (event) => {
 });
 
 form.addEventListener("reset", () => {
-  error.innerHTML = ""; // on reset, clear the innderHTML
-  wordCount.innerHTML = ""; // on reset, clear the innderHTML
+  error.innerHTML = ""; // on reset, clear the innerHTML
+  wordCount.innerHTML = ""; // on reset, clear the innerHTML
 });
 
 toggleButton.addEventListener("click", (event) => {
@@ -167,5 +167,3 @@ $ git push origin add-code
 Add Bootstrap to your HTML elements like buttons and the form.
 
 NOTE: Do not remove the ID attributes from the HTML. When you copy over the Bootstrap component, make sure to add the attribute to it.
-
-
